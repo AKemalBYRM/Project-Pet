@@ -1698,9 +1698,18 @@ output worker-2-ip {
 git add .
 git commit -m 'added dev-k8s-terraform  for kubernetes infrastructure'
 git push --set-upstream origin feature/msp-15
+git checkout dev
+git merge feature/msp-15
+git push origin dev
 ```
 
 ## MSP 16 - Create a QA Automation Environment with Kubernetes - Part-2
+
+```bash
+git checkout dev
+git branch feature/msp-16
+git checkout feature/msp-16
+```
 
 - Create a Jenkins Job and name it as `test-creating-qa-automation-infrastructure` to test `bash` scripts creating QA Automation Infrastructure for `dev` manually.
   * Select `Freestyle project` and click `OK`
