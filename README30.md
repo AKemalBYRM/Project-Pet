@@ -3626,7 +3626,7 @@ kubectl create namespace cattle-system
 ```bash
 helm install rancher rancher-latest/rancher \
   --namespace cattle-system \
-  --set hostname=rancher.clarusway.us \
+  --set hostname=rancher.akemalawsdevops.link \
   --set tls=external \
   --set replicas=1
 ```
@@ -3751,7 +3751,7 @@ nano /home/ec2-user/.m2/settings.xml
     <server>
       <id>nexus</id>
       <username>admin</username>
-      <password>your-password</password> 
+      <password>nexus12345</password> 
     </server>
   </servers>
 </settings>
